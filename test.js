@@ -1,33 +1,23 @@
-console.log("hello nate");
-var Greeting = "Bonjour Nanouf, tu es si seul";
-console.log(Greeting);
+//i deleted all the other stuff kek
 
+isDumb = true;
+isSmart = false;
 
-var speed = 4;
-var time = 2;
-console.log(speed * time);
-
-function showDistance(speed, time){
-    console.log(speed * time);
+if (isDumb || isSmart){
+    console.log("wtf thats fake");
+} else {
+    console.log("ok i guess");
 }
 
-showDistance(5,5);
 
-
-function getArea(width, length){
-    var area = width * length;
-
-    return area;
-}
-
-console.log(getArea(2,5));
-
-function areaExponent(area, power){
-    return area ** power;
-}
-
-console.log(areaExponent(getArea(2,5),3));
-
-function convertFeetToInches(length){
-    return length*12;
+number = 2;
+switch (number){
+    case 1:
+        console.log("January");
+        break;
+    case 2:
+        console.log("February");
+        break;
+    default:
+        console.log("not a month");
 }
