@@ -1,23 +1,11 @@
-//i deleted all the other stuff kek
+//hi
 
-isDumb = true;
-isSmart = false;
+currentsecond=1;
 
-if (isDumb || isSmart){
-    console.log("wtf thats fake");
-} else {
-    console.log("ok i guess");
+function printTime(){
+    console.log(currentsecond);
+    currentsecond++;
 }
-
-
-number = 2;
-switch (number){
-    case 1:
-        console.log("January");
-        break;
-    case 2:
-        console.log("February");
-        break;
-    default:
-        console.log("not a month");
-}
+//print out 1 to 15 every second
+var intervalid = setInterval(printTime, 1000);
+setTimeout(clearInterval, 16000, intervalid);
