@@ -1,51 +1,29 @@
 //hi
 
-//today we do objects
+//today we do lots of things
 
-var burger = {
-    price: 2.99,
-    name: "i wish",
-    ingredients: {
-        buns: "sesame",
-        cheeseSlices: 2,
-        pickles: false,
-        tomato: true,
-        patties: 2,
-    }
+var string1 = "This is not cool"; //cant change it
+console.log(string1);
+console.log(string1[0]+string1[2]);
+console.log(string1.slice(5));
+console.log(string1.indexOf("i"));
+
+var classes = ["pge", "de", "physics", "rhe"];
+var thatonesong = ["je", "ne", "sais", "pas", "comment", "te", "dire"];
+
+for (var i = 0; i < thatonesong.length; i++){
+    console.log(thatonesong[i]);
 }
 
-console.log(burger.ingredients.buns);
-
-function MyClass(name,location,starttime,endtime){
-    this.name = name;
-    this.location = location;
-    this.starttime = starttime;
-    this.endtime = endtime;
+function Person(name, height, age){
+    this.name=name;
+    this.height=height;
+    this.age=age;
 }
 
-var pge301 = new MyClass("pge301","cpe 2.204",10,11);
-console.log(pge301.name);
-
-
-function Student(firstname, lastname, university, major, gradyear) {
-    this.firstname = firstname;
-    this.lastname = lastname;
-    this.university = university;
-    this.major = major;
-    this.gradyear = gradyear;
-    this.hasgraduated = gradyear <= 2021;
+var me = new Person(nate, "6'5", 18);
+var txtoutput = "";
+for (i in me){
+    txtoutput += me[i];
 }
-
-var me = new Student("Naoufal", "Ennadi", "UT Austin", "PGE", 2025);
-
-console.log(me.hasgraduated);
-
-function Course(student,name, location){
-    this.student = student;
-    this.name = name;
-    this.location = location;
-}
-
-var jslearn = new Course(me, "Intro JS", "GDC 6.302");
-
-console.log(jslearn.name, jslearn.location, jslearn.student.gradyear);
+console.log(txtoutput);
