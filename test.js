@@ -1,29 +1,31 @@
 //hi
 
-//today we do lots of things
+//today we do lots of things: advanced objects oriented programming
 
-var string1 = "This is not cool"; //cant change it
-console.log(string1);
-console.log(string1[0]+string1[2]);
-console.log(string1.slice(5));
-console.log(string1.indexOf("i"));
-
-var classes = ["pge", "de", "physics", "rhe"];
-var thatonesong = ["je", "ne", "sais", "pas", "comment", "te", "dire"];
-
-for (var i = 0; i < thatonesong.length; i++){
-    console.log(thatonesong[i]);
+var broccoli = {
+    name: "broccoli",
+    price: 2.00,
+    inventory: 30,
 }
 
-function Person(name, height, age){
-    this.name=name;
-    this.height=height;
-    this.age=age;
-}
+console.log(broccoli.inventory);
 
-var me = new Person(nate, "6'5", 18);
-var txtoutput = "";
-for (i in me){
-    txtoutput += me[i];
+broccoli.inventory = 25;
+console.log(broccoli.inventory);
+
+broccoli.brand = "green giant";
+console.log(broccoli.brand);
+
+
+var broccoli2 = {
+	color: "green",
 }
-console.log(txtoutput);
+var packofbroccoli = {
+	weight: 2,
+}
+console.log(packofbroccoli.color);
+packofbroccoli.__proto__ = broccoli2;
+console.log(packofbroccoli.color);
+
+console.log(3==="3"); //USE THIS???!!?!?!!?!
+
